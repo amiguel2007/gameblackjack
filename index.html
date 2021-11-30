@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego Blackjack Antonio Miguel JS</title>
+    <script src="blackjack.js"></script>
+    <style>
+        #jugador {
+            text-align: center;
+        }
+        #resultado {
+            font-size: 30px;
+            
+            text-align: center;
+        }
+        #ordenador {
+            text-align: center;
+        }
+        #botones {
+            text-align: center;
+        }
+        button {
+            font-size: 20px;
+            color: white;
+            margin-left: 20px;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <h1>Juego de Blackjack programado por Antonio Miguel Fernández en JavaScript.</h1>
+    <hr>
+    <h2>Instrucciones: Pulse en Generar, para tirar carta el jugador que más se acerque a la puntuación de 7.5 ha ganado, pulse Plantar, para saber la puntuación del ordenador y el resultado</h2>
+	<h2>Las cartas del 1 al 7 suman el valor de la carta, sota, caballo y rey puntuan como 0.5.</h2>
+    <br>
+    <br>
+    <div id="jugador">
+        <p>Jugador</p>
+        <hr>
+        <p>Cartas del jugador:</p>  <div id="cartas"></div>
+        <p>Puntuación del jugador:</p> <div id="puntuacion"></div>
+    
+
+    </div>
+    <br>
+    <br>
+
+    <div id="ordenador">
+        <p>IA</p>
+        <hr>
+        <p>Cartas del ordenador:</p>  <div id="cartasia"></div>
+        <p>Puntuación del ordenador:</p> <div id="puntuacionia"></div>
+    
+    </div>
+    <br>
+    <div id="botones">
+        <button onclick="sumar()" value="Generar">Generar</button>
+        <button onclick="plantar()" value="Generar">Plantar</button>
+    </div>
+
+
+    <div id="resultado"></div>
+    <div id="error"></div>
+
+
+</body>
+</html>
